@@ -15,7 +15,7 @@ export default class extends Controller {
   }
 
   #showFileName() {
-    this.fileNameTarget.innerText = this.#file.name
+    this.fileNameTarget.innerHTML = this.#file.name
     this.fileNameTarget.removeAttribute("hidden")
     this.placeholderTarget.setAttribute("hidden", true)
   }
